@@ -6,7 +6,10 @@ const obfuscateInput = document.getElementById('obfuscate-input');
 const listener = () => {
     const val = urlInput.value;
     if (val === '' || val == null) return;
-    if (!val.startsWith('https://pbs.twimg.com/')) alert('Invalid URL! The URL must begin with https://pbs.twimg.com/');
+    if (!val.startsWith('https://pbs.twimg.com/')) {
+        alert('Invalid URL! The URL must begin with https://pbs.twimg.com/');
+        return;
+    }
 
     const obfuscate = !!obfuscateInput.checked;
 
