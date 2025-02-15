@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doge Twitter Image Proxy</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Twitter Image Proxy via Doge.gov</h1>
+      </header>
+
+      <div id="proxy-row">
+        <input id="url-input" type="text" placeholder="Enter pbs.twimg.com URL">
+        <input type="checkbox" id="obfuscate-input"><label for="obfuscate-input">Obfuscate</label>
+      </div>
+      <textarea id="result" readonly onclick="this.focus();this.select();" placeholder="Resulting URL will appear here"></textarea>
+      <img src="" alt="" id="result-img">
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
